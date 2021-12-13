@@ -4,21 +4,25 @@
         <meta charset="utf-8">
         <title>Contact Me</title>
     </head>
+    <link rel="stylesheet" href="style.css">
     <body>
         <h1> My Contact Details</h1>
         <p>My Fictional address</p>
         <p>My fictional email id:aggyashi@yahoo.com</p>
         <p>My phone number: 87456789234</p>
-        <form action="mailto:aggyashi@yahoo.com" method="POST" enctype="text/plain">
-            <label>Your name</label>
-            <input type="text" name=""><br>
-            <label>Your email address</label>
-            <input type="email"><br>
-            <label>Your contact number</label>
-            <input type="tel"><br>
-            <label>Your message:</label><br>
-            <textarea name="name" rows="10" cols="30"></textarea><br>
-            <input type="submit">
+        <form action="mailto:yashika.070898@gmail.com" method="POST" enctype="text/plain">
+            <fieldset>
+                <legend> Your Information</legend>
+                <ul>
+                    <li><label for="form-name">Your Name:</label><input type="text" name="name" id="form-name"></li>
+                    <li><label for="form-email"> Your Email:</label><input type="email" name="email" id="form-email"></li>
+                    <li><label for="form-ph">Your Number:</label><input type="tel" id="form-ph"></li>
+                    <li><label for="form-message">Your Message:</label><br>
+                        <textarea name="message" rows="4" cols="60" id="form-message" placeholder="No more than 400 characters long"></textarea></li>
+                </ul>  
+            </fieldset>
+           <p><input type="submit">
+            <input type="reset"></p> 
         </form>
     </body>
 </html>
