@@ -1,0 +1,9 @@
+body{
+    background-color: aqua;
+}
+h1,h3{color: blue}
+hr{ ;
+color: gray; 
+border-top: dotted 5px ;
+width: 5%;
+}
