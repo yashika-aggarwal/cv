@@ -10,34 +10,75 @@ body{
     font-family: sans-serif;
     line-height: 1.75em;
     }
-    h1,h3,hr{text-align: center;
-            }
-h1{ 
-    font: bold "Marko One",Georgia,serif;
-    /**font-family: "Marko One",Georgia, serif;
-    font-weight: normal;*/
-    text-transform: uppercase;
-    color: olive;
-    border-bottom: 1px solid #57b1dc;
-    margin-top: 30px;
-    text-shadow: 0.05em 0.05em 0.1em lightslategray;
+    /**header syles*/
+    header{
+        color:lightslategray;
+        text-align: center;
+        height: 15em;
+        background-color: rgba(255, 255, 255,0.5);
     }
-h3{color: #d1633c;
-    font-size: 1em;
-    text-transform: uppercase;
-    letter-spacing: 0.5em;
-    }
-hr{ 
-color: gray; 
-border-top: dotted 5px ;
-width: 5%;
-}
-ul{
-    list-style-type: none;
-}
-/**link styles*/
+    /**link stles*/
 a:link, a:visited { color: #DC6903; }
 a:focus, a:hover, a:active { color: #F9AB33; }
 a{text-decoration: none;
   border-bottom: 1px dotted;
   padding-bottom: .2em;}
+
+    /**nav styles*/
+ nav,footer{
+        background-color: #783f27;
+        font-family: Verdana, sans-serif;
+    }
+nav ul li a:link, nav ul li a:visited {
+        color: #F9AB33;
+      }
+nav ul li a:focus, nav ul li a:hover, nav ul li a:active {
+        color: #fff;
+      }
+nav ul li {
+          font-size: .8em;
+          text-transform: uppercase;
+          letter-spacing: .2em;
+      }
+    
+h1{ 
+        font: bold "Marko One",Georgia,serif;
+        /**font-family: "Marko One",Georgia, serif;
+        font-weight: normal;*/
+        text-transform: uppercase;
+        color: olive;
+        text-shadow: 0.05em 0.05em 0.1em lightslategray;
+ }
+
+    /**main style*/
+main{
+    font-family: 'Stint Ultra Expanded', cursive;
+    background-color: white;
+    line-height: 1.8em;
+    color: #555;
+    padding: 1em;/*main padding*/
+    border: double 4px #EADDC4;/*mainborder*/
+    border-radius: 25px;/*mainborderradius*/
+}
+
+h3,hr{text-align: center;
+}
+
+h3{color: #7a0002;
+    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    border-top: 1px solid;
+    border-left: 3px solid;
+    padding-left: 1em;
+    }
+
+hr{ 
+color: gray; 
+border-top: dotted 5px ;
+width: 5%;
+}
+
+ul{
+    list-style-type: none;
+}
