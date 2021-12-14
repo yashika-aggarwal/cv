@@ -6,7 +6,7 @@ html { box-sizing: border-box;
 }
 body{
     background-color: #faf2e4;
-    margin: 0 10%;
+    margin: 0;
     font-family: sans-serif;
     line-height: 1.75em;
     }
@@ -17,6 +17,18 @@ body{
         height: 15em;
         background-color: rgba(255, 255, 255,0.5);
     }
+    header h1{ 
+        font: bold "Marko One",Georgia,serif;
+        /**font-family: "Marko One",Georgia, serif;
+        font-weight: normal;*/
+        text-transform: uppercase;
+        color: olive;
+        text-shadow: 0.05em 0.05em 0.1em lightslategray;
+        margin: 1.5em;
+ }
+ header p{
+     margin-top: -12px;
+ }
     /**link stles*/
 a:link, a:visited { color: #DC6903; }
 a:focus, a:hover, a:active { color: #F9AB33; }
@@ -29,6 +41,10 @@ a{text-decoration: none;
         background-color: #783f27;
         font-family: Verdana, sans-serif;
     }
+
+    nav ul{
+        margin-top: 0;
+    }
 nav ul li a:link, nav ul li a:visited {
         color: #F9AB33;
       }
@@ -40,15 +56,6 @@ nav ul li {
           text-transform: uppercase;
           letter-spacing: .2em;
       }
-    
-h1{ 
-        font: bold "Marko One",Georgia,serif;
-        /**font-family: "Marko One",Georgia, serif;
-        font-weight: normal;*/
-        text-transform: uppercase;
-        color: olive;
-        text-shadow: 0.05em 0.05em 0.1em lightslategray;
- }
 
     /**main style*/
 main{
@@ -59,6 +66,7 @@ main{
     padding: 1em;/*main padding*/
     border: double 4px #EADDC4;/*mainborder*/
     border-radius: 25px;/*mainborderradius*/
+    margin: 2.5%;
 }
 
 h3,hr{text-align: center;
@@ -72,12 +80,6 @@ h3{color: #7a0002;
     border-left: 3px solid;
     padding-left: 1em;
     }
-
-hr{ 
-color: gray; 
-border-top: dotted 5px ;
-width: 5%;
-}
 
 ul{
     list-style-type: none;
