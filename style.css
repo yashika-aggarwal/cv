@@ -5,37 +5,53 @@ html { box-sizing: border-box;
     box-sizing: inherit;
 }
 body{
-    background-color: #faf2e4;
-    margin: 0;
-    font-family: sans-serif;
-    line-height: 1.75em;
+   /* background-color: #faf2e4;*/
+    margin: 0 15% 0;
+    font-family: Georgia,sans-serif;
+    font-size: 100%;
+    line-height:175%;
+    background: #faf2e4 url() no-repeat center 100px fixed;
     }
+
+ /**link stles*/
+ a:link  {
+    color: #939;}
+a:visited { 
+    color: #937393/*#DC6903*/; }
+a:focus, a:hover    {
+    color: #c700f2;
+background-color: #fff;}
+a:active { 
+    color: #f0f/*#F9AB33*/;
+    background-color: #fff;
+ }
+a{
+ text-decoration: none;
+ border-bottom: 1px dotted;
+ padding-bottom: .2em;
+  }
+
 /**header syles*/
 header{
-        color:lightslategray;
-        text-align: center;
-        height: 15em;
-        background-color: rgba(255, 255, 255,0.5);
+    margin-top: 0;
+    color:lightslategray;
+    text-align: center;
+    height: 15em;
+    background-color: rgba(255, 255, 255,0.5);
 }
 header h1{ 
-        font: bold "Marko One",Georgia,serif;
-        /**font-family: "Marko One",Georgia, serif;
-        font-weight: normal;*/
-        text-transform: uppercase;
-        color: olive;
-        text-shadow: 0.05em 0.05em 0.1em lightslategray;
-        margin: 1.5em;
+    font: bold 1.5em "Marko One",Georgia,serif;
+    /**font-family: "Marko One",Georgia, serif;
+    font-weight: normal;*/
+    text-transform: uppercase;
+    color: #939;
+    text-shadow: 0.05em 0.05em 0.1em lightslategray;
+    margin: 1.5em;
  }
 header p{
-     margin-top: -12px;
- }
-   
- /**link stles*/
-a:link, a:visited { color: #DC6903; }
-a:focus, a:hover, a:active { color: #F9AB33; }
-a{text-decoration: none;
-  border-bottom: 1px dotted;
-  padding-bottom: .2em;
+    margin-top: -12px;
+    font-style: italic;
+    font-size: 1.2em;
 }
 
  /**nav styles*/
@@ -80,6 +96,21 @@ main{
     border-radius: 25px;/*mainborderradius*/
     margin: 2.5%;
 }
+/* ul styles*/
+ul  {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+#info p {
+    font-style: italic;
+}
+dt,li{
+    font-weight: bold;
+}
+strong  {
+    font-style: italic;
+}
 
 h3,hr{text-align: center;
 }
@@ -92,3 +123,14 @@ h3{color: #7a0002;
     border-left: 3px solid;
     padding-left: 1em;
     }
+h2  {
+    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: .5em;
+    text-align: center;
+    color: #c60;
+}
+h2 + p  {
+    text-align: center;
+    font-style: italic;
+}
