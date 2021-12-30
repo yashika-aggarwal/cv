@@ -36,7 +36,7 @@ header{
     margin-top: 0;
     color:lightslategray;
     text-align: center;
-    height: 15em;
+    height: 18em;
     background-color: rgba(255, 255, 255,0.5);
     background-size: cover;
 }
@@ -113,6 +113,11 @@ ul  {
 }
 dt,li{
     font-weight: bold;
+    
+}
+dd {
+  padding-bottom: 4em;
+
 }
 strong  {
     font-style: italic;
@@ -121,7 +126,7 @@ strong  {
 h3,hr{text-align: center;
 }
 
-h3{
+h3,dt {
     color: #7a0002;
     font-size: 1em;
     text-transform: uppercase;
@@ -140,7 +145,7 @@ h2  {
     letter-spacing: .5em;
     text-align: center;
     color: #c60;
-    font-family: Georgia, serif;
+    font-family: 'Slint Ultra Expanded' Georgia, serif;
     font-weight: normal;
 }
 h2 + p  {
@@ -159,7 +164,11 @@ p.more {
     font-size: .8em;
     padding: 1em;
   }
-  @media screen and (min-width: 400px) {
+  main img {
+    display: block;
+    margin: .5em  auto;
+  }
+@media screen and (min-width: 400px) {
     nav ul li {
       flex: none;
     }
@@ -167,39 +176,56 @@ p.more {
       justify-content: center; 
     }
   }
-  
-@media screen and (min-width: 600px) {
-    header p {
-      display: block;
-      margin-top: -1.5em;
-      font-family: Georgia, serif;
-      font-style: italic;
-      font-size: 1.2em;
-    }
-    main, h2, h3 {
-      font-family: 'Stint Ultra Expanded', Georgia, serif; 
-    }
-    h2, h3 {
-      font-weight: bold;
-    }
-    main {
-      line-height: 1.8em;
-      padding: 1em;
-      border: double 4px #EADDC4;
-      border-radius: 25px;
-      margin: 2.5%; 
-    }
+@media screen and (min-width: 480px) {
+  main img {
+    float: left;
+    margin: 0 1em 1em 0;
   }
+  img[src*="teaching"]  {
+    margin-left:0;
+    shape-outside: url(teaching.png);
+    shape-margin: 1em
+  }
+  img[src*="coding"]  {
+    margin-left: 0;
+    shape-outside: url(coding.png);
+    shape-margin: 1em
+  }
+}
+@media screen and (min-width: 600px) {
+  header p {
+    display: block;
+     /* margin-top: -1.5em;*/
+    font-family: Georgia, serif;
+    font-style: italic;
+    font-size: 1.2em;
+  }
+  main, h2, h3 {
+  font-family: 'Stint Ultra Expanded', Georgia, serif; 
+  }
+  h2, h3 {
+    font-weight: bold;
+  }
+  main {
+    line-height: 1.8em;
+    padding: 1em;
+    border: double 4px #EADDC4;
+    border-radius: 25px;
+    margin: 2.5%; 
+  }
+}
+  
   @media screen and (min-width: 940px) {
+    /* GRID LAYOUT*/
     #container {
       display: grid;
-      grid-template-rows: auto min-height 5em;
-      grid-template-columns: minmax(25em, 1fr) 16em;
+      grid-template-rows: auto min-content 10em;
+      grid-template-columns: minmax(25em, 1fr) 25em;
       grid-template-areas: 
         "banner banner"
         "main skills"
         "footer footer";
-      max-width: 1200px;
+      max-width: 1300px;
       margin: 0 auto;
       position: relative;
     }
