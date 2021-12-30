@@ -29,8 +29,36 @@ a{
  text-decoration: none;
  border-bottom: 1px dotted;
  padding-bottom: .2em;
-  }
-
+}
+/*bottom styles*/
+.btn {
+  background: #d16439;
+  background-image: -webkit-linear-gradient(top, #d16439, #783f27);
+  background-image: -moz-linear-gradient(top, #d16439, #783f27);
+  background-image: -ms-linear-gradient(top, #d16439, #783f27);
+  background-image: -o-linear-gradient(top, #d16439, #783f27);
+  background-image: linear-gradient(to bottom, #d16439, #783f27);
+  -webkit-border-radius: 8;
+  -moz-border-radius: 8;
+  border-radius: 8px;
+  font-family: Arial;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+#contact-me a:link  {
+  color: #F9AB33;
+}
+.btn:hover {
+  background: #fff;
+  background-image: -webkit-linear-gradient(top, #fff, #F9AB33);
+  background-image: -moz-linear-gradient(top, #fff, #F9AB33);
+  background-image: -ms-linear-gradient(top, #fff, #F9AB33);
+  background-image: -o-linear-gradient(top, #fff, #F9AB33);
+  background-image: linear-gradient(to bottom, #fff, #F9AB33);
+  text-decoration: none;
+}
 /**header syles*/
 header{
     margin-top: 0;
@@ -89,7 +117,6 @@ nav ul li a {
     padding: .5em 1em;
     margin: .25em;
 }
-  
 /**main style*/
 main{
     font-family: 'Stint Ultra Expanded', cursive;
@@ -117,13 +144,13 @@ dt,li{
 }
 dd {
   padding-bottom: 4em;
-
+  font-family: 'Stint Ultra Expanded', Georgia, serif; 
 }
 strong  {
     font-style: italic;
 }
 
-h3,hr{text-align: center;
+h3,hr {text-align: center;
 }
 
 h3,dt {
@@ -152,6 +179,7 @@ h2 + p  {
     text-align: center;
     font-style: italic;
 }
+
 p.more {
     font-family: verdana, sans-serif;
     text-transform: uppercase; 
@@ -200,7 +228,7 @@ p.more {
     font-style: italic;
     font-size: 1.2em;
   }
-  main, h2, h3 {
+  main, h2, h3, dt {
   font-family: 'Stint Ultra Expanded', Georgia, serif; 
   }
   h2, h3 {
