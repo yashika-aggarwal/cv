@@ -1,17 +1,16 @@
 @charset "utf-8";
 html { box-sizing: border-box;
 }
-*{
+*, *:before, *:after  {
     box-sizing: inherit;
 }
 body{
    /* background-color: #faf2e4;*/
     margin: 0;
-    font-family: Verdana, Arial,serif;
+    font-family: Verdana, Geneva, sans-serif;
     font-size: 100%;
-    line-height:175%;
     background: #faf2e4 url() no-repeat center 100px fixed;
-    }
+  }
 
  /**link stles*/
  a:link  {
