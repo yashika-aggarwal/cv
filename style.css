@@ -57,6 +57,14 @@ body{
   }
 
  /**link stles*/
+ a {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+ }
  a:link  {
     color: #939;}
 a:visited { 
@@ -118,13 +126,18 @@ header h1{
     text-transform: uppercase;
     color: #939;
     text-shadow: 0.05em 0.05em 0.1em lightslategray;
-    margin-top: 1.5em;
  }
 header p{
-    margin-top: -12px;
-    font-style: italic;
-    font-size: 1.2em;
-    display: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+ /* margin-top: -12px;
+  font-style: italic;
+  font-size: 1.2em;
+  display: none;*/
 }
 
  /**nav styles*/
@@ -136,6 +149,10 @@ nav,footer{
 nav ul{
   margin: 0;
   padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
   list-style-type: none;
   display: flex;
   justify-content:center;
@@ -159,6 +176,17 @@ nav ul li a {
     border-radius: .5em;
     padding: .5em 1em;
     margin: .25em;
+}
+li.logo {
+  margin: 0;
+  padding: .5em;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  margin-right: auto;
+  text-decoration: underline;
+  color: #F9AB33;
 }
 /**main style*/
 main{
@@ -311,15 +339,14 @@ input, textarea, fieldset {
     shape-margin: 1em
   }
   img[src*="coding"]  {
-    margin-left: 0;
-    shape-outside: url(coding.png);
+s    shape-outside: url(coding.png);
     shape-margin: 1em
   }
 }
 @media screen and (min-width: 600px) {
   header p {
     display: block;
-     /* margin-top: -1.5em;*/
+    margin-top: -15em;
     font-family: Georgia, serif;
     font-style: italic;
     font-size: 1.2em;
@@ -356,6 +383,13 @@ input, textarea, fieldset {
 header {
  grid-area: banner;
 }
+header h1 {
+  margin: 1.5em 20em 0 20em;
+  padding: .5em 0 .5em 0;
+  border-top: dashed wheat ;
+  border-bottom: dashed wheat;
+}
+
 main {
  grid-area: main;
 }
