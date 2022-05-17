@@ -147,7 +147,7 @@ header p{
 
  /**nav styles*/
 nav,footer{
- /* background-color: #783f27;*/
+  background-color: #0D1723;
   font-family: Verdana, sans-serif;
  }
 
@@ -177,8 +177,8 @@ nav ul li {
       }
 nav ul li a {
     display: block;
-    border: 1px solid;
-    border-radius: .5em;
+   /* border: 1px solid;
+    border-radius: .5em;*/
     padding: .5em 1em;
     margin: .25em;
 }
@@ -350,6 +350,13 @@ input, textarea, fieldset {
   }
 }
 @media screen and (min-width: 600px) {
+  nav {
+    height: 5rem;
+    padding-top: 1rem;
+  }
+  li.logo {
+    display:block;
+  }
   header p {
     display: block;
     /*margin-top: -15em;*/
@@ -389,7 +396,6 @@ input, textarea, fieldset {
 header {
  grid-area: banner;
 }
-
 
 main {
  grid-area: main;
