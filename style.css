@@ -263,12 +263,29 @@ p.more {
     font-size: .8em;
     clear: left;
   }
-  footer{
+footer{
     color: #EADDC4;
     text-align: center;
-    font-size: .8em;
+    font-size: 1em;
     padding: 1em;
-  }
+}
+#footer-link a:link{
+  margin: 1em;
+  color: gray;
+  border-bottom: 1px solid;
+}
+
+#credits {
+  padding: 1em;
+}
+#credits a:link{
+    color: #EADDC4;
+    border: none;
+}
+footer p{
+  border-top: 1px solid green;
+  padding: 1em;
+}
   main img {
     display: block;
     margin: .5em  auto;
