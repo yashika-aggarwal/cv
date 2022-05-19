@@ -194,6 +194,11 @@ li.logo {
   text-decoration: underline;
   color: #F9AB33;
 }
+li.logo a{
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
 /**main style*/
 main{
     font-family: 'Stint Ultra Expanded', cursive;
@@ -268,7 +273,9 @@ footer{
     text-align: center;
     font-size: 1em;
     padding: 1em;
+    height: 12rem;
 }
+
 #footer-link a:link{
   margin: 1em;
   color: gray;
