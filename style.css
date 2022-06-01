@@ -47,6 +47,15 @@ html { box-sizing: border-box;
 }
 *, *:before, *:after  {
     box-sizing: inherit;
+    user-select: none;EDUCATION
+    BACHELOR OF ARTS
+    INTERMEDIATE EDUCATION
+    MATRICULATION EDUCATION
+    TRAINING
+    Date	Organisation
+    Sept-Oct 2017	Tecnia International School
+    Mar-Apr 2017	Holy heart school
+    2018	Maxwell Institute
 }
 body{
    /* background-color: #faf2e4;*/
@@ -121,17 +130,18 @@ header{
     background-size: cover;
 }
 header h1{ 
-    font: bold 1.5em "Helvetica,Arial, sans-serif";    ;
-    /**font-family: "Marko One",Georgia, serif;
-    font-weight: normal;*/
-    text-transform: uppercase;
+    font-weight: 700;   
     color: #dece99;
-    text-shadow: 0.05em 0.05em 0.1em lightslategray;
-    padding: .5em 0 .5em 0;
-    border-top: dashed #dece99 ;
-    border-bottom: dashed #dece99;
-    margin: 1.5rem 1.5rem;
+    margin: 1.5rem;
  }
+ h1::before, h1::after{
+  content: "";
+  display: block;
+  border-bottom: 2px dashed #dece99;
+  width: 12.5rem;
+  margin: 1em auto;
+ }
+ 
 header p{
   margin: 0;
   padding: 0;
@@ -177,11 +187,11 @@ nav ul li {
       }
 nav ul li a {
     display: block;
-   /* border: 1px solid;
-    border-radius: .5em;*/
     padding: .5em 1em;
     margin: .25em;
+    width: 100%;
 }
+
 li.logo {
   display:none;
   margin: 0;
@@ -268,12 +278,16 @@ p.more {
     font-size: .8em;
     clear: left;
   }
+#details {
+  display: none;
+}
+
 footer{
     color: #EADDC4;
     text-align: center;
     font-size: 1em;
     padding: 1em;
-    height: 12rem;
+    height: 15rem;
 }
 
 #footer-link a:link{
@@ -425,6 +439,7 @@ main {
  grid-area: main;
 }
 #details {
+  display: block;
   grid-area: skills;
   background-color: #F6F3ED;
   padding: 1em;
